@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            color: white;
+            background-color: #666;
+        }
+        .main{
+            text-align: center;
+        }
+        input{
+            display: block;
+            border: solid 1px;
+            border: none;
+            border-bottom: solid black 3px;
+            background-color: rgba(0,0,0,0.5);
+            color: #ffffff;
+            outline: none;
+            width: 300px;
+            margin: auto;
+            width: 250px;
+            height: 30px;
+            margin-top: 20px;    
+        }
+        a{
+            text-decoration: none;
+            color: rgb(240, 234, 199)
+        }
+         
+        .btn{
+          display: block;
+          margin: auto;
+          height: 40px;
+          width: 100px;
+          outline: none;
+          background-color: crimson;
+          border-collapse: collapse;
+          border-color: rgba(0,0,0,0.5);
+          color: #ffffff
+        }
+        
+        .box{
+           width: 15px;
+           margin-right: 10px;
+           margin-top: -5px;
+        }
+
+        .check-p{
+            display: flex;
+        }
+
+        p{
+            margin-right: 380px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <form class="reg" action="register">
+            <h1>REGISTER HERE</h1>
+            <input type="firstname" placeholder="First name" required><br>
+            <input type="lastname" placeholder="Last name" required><br>
+            <input type="email" placeholder="Email" required><br>
+            <input type="phone number" placeholder="Phone Number" required><br>
+            <input type="password" placeholder="Password" required><br>
+            <input type="comfirm password" placeholder="Comfirm password" required><br>
+        </form>
+        <p class="check-p"><input class="box" type="checkbox"> I agree to the <a href="#">Term and Condition</a></p>
+        <button class="btn">REGISTER</button>
+        <h4>Already have an account</h4>
+        <a href="login.html">Login in</a>
+    </div>
+    
+</body>
+</html>
